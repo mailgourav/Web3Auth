@@ -1,4 +1,32 @@
-const webpack = require("webpack");
+/*const {
+  override,
+  setWebpackOptimizationSplitChunks,
+  adjustWorkbox,
+} = require("customize-cra")
+*/
+const webpack = require("webpack")
+
+/*
+module.exports = override(
+  setWebpackOptimizationSplitChunks({
+    chunks: "all",
+    minSize: 300000,
+    maxSize: 3000000,
+  }),
+  adjustWorkbox((wb) =>
+    Object.assign(wb, {
+      cleanupOutdatedCaches: true,
+      skipWaiting: true,
+      exclude: (wb.exclude || []).concat("index.html"),
+      runtimeCaching: [
+        {
+          handler: "NetworkFirst",
+        },
+      ],
+    })
+  )
+)
+*/
 
 module.exports = function override(config) {
   const fallback = config.resolve.fallback || {};
