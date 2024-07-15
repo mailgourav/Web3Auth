@@ -4,7 +4,7 @@
   adjustWorkbox,
 } = require("customize-cra")
 */
-const webpack = require("webpack")
+//const webpack = require("webpack")
 
 /*
 module.exports = override(
@@ -28,7 +28,7 @@ module.exports = override(
 )
 */
 
-module.exports = function override(config) {
+/*module.exports = function override(config) {
   const fallback = config.resolve.fallback || {};
   Object.assign(fallback, {
     crypto: require.resolve("crypto-browserify"),
@@ -59,4 +59,4 @@ module.exports = function override(config) {
     },
   });
   return config;
-};
+};*/
